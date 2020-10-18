@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Medswift- Home</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/jQuery-3.5.js"></script>
+  <script>
+    var para = "";
+    var para1="";
+    $(document).ready(function()
+    {
+       para = $('#para').html();
+       para1 = $('#para1').html();
+            
+    });
+    
+    function searchData(){
+     
+      var text=document.getElementById("search_field").value;
+       if(text)
+       {        
+        var pattern=new RegExp("("+text+")", "gi");
+
+        var new_text=para.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para").innerHTML=new_text;
+
+        var new_text=para1.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para1").innerHTML=new_text;
+       }
+      
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <!-- <img src="style/medswift.png" style="height: 120px; width: 120px"> -->
+      <div id="logo">
+         
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="content.html">Domain</a></li>
+          <li><a href="milestones.html">Milestones</a></li>
+          <li><a href="document.html">Documents</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+	  <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+              <div>
+                <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </div>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div>
+        <h1 style="text-align: center;"><strong>MEDSWIFT</strong></h1>
+      </div>
+      <div id="content" name="content">
+     
+        <p name="para" id="para" style="text-align: justify;text-justify: inter-word;">One of the major problems currently in the healthcare industry is that there is no proper way of recognizing Doctor's handwritings and transferring clinical records of a patient from one hospital to another in a secure way. This specially matters in emergency situations such as accidents. Furthermore, there's a huge probability of losing clinical data and making human errors when referring to the prescriptions.</p>
+
+        <p name="para1" id="para1" style="text-align: justify;text-justify: inter-word;">"Medswift" addresses all the above problems by providing a secure and reliable web application. It's implemented using emerging technologies such as Convolutional Neural Network, k-nearest neighbors algorithms, blockchain mechanism, and InterPlanetary File System. The system recognizes doctor's handwritings using above machine learning algorithms and transfers clinical data across hospitals using Ethereum blockchain.</p>
+
+        
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
+       <p>
+          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
+       </p>    
+    </div>
+  </div>
+
+  
+</body>
+</html>

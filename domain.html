@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Medswift- Domain</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+       <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="content.html">Domain</a></li>
+          <li><a href="milestones.html">Milestones</a></li>
+          <li><a href="document.html">Documents</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner4"></div>
+      <div id="sidebar_container">
+        
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" placeholder="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div>
+        <h1 style="text-align: center;"><strong>Domain</strong></h1>
+      </div>
+      <div id="content">
+        <h2><b>Research Gap</b></h2>
+            <p>"DioNote"[1] is a mobile applications that can recognize handwritings.</p>
+            <ul>
+              <li>The application cannot recognize the handwritings which are on papers and can only recognize the handwritings which are write on screen.</li>
+              <li>The application is not suitable for Sri Lankan hospitals since each doctor cannot keep a tablet which has stylus to record examinations and prescriptions</li>
+            </ul>
+
+            <p>The Medicalchain[2]  is an application that is used to transfers clinical data through blockchain</p>
+            <ul>
+              <li>It uses permission based Hyperledger Fabric architecture which allows varying access levels. </li>
+              <li>But our system is built using a private Ethereum blockchain which is permissioned. So only the authorized parties can view data.</li>
+            </ul>
+
+          <h2><b>Research Problem</b></h2>
+            <ul>
+              <li>Patient clinical records are responsive data that are needed by hospitals and doctors when a patient is transferred.
+              </li>
+              <li>Currently there does not exist a secure means to transfer for this information.</li> 
+              <li>Patient clinical records are currently stored in paper format. </li>
+              <li>These paper documents contain doctors' handwriting which are known to be difficult to comprehend. </li>
+              <li>In turn this may lead to miss interpretation of the patient records, which can lead to harmful outcomes. </li>
+            </ul>
+
+            <h2><b>Research Objectives</b></h2>
+            <h3 style="padding-left: 20px">Main Objective</h3>
+            <p style="text-align: justify;text-justify: inter-word;">The project Digitized Clinical Data Transfer using Digital Ledger�s main objective is to provide features for digitizing handwritten paper document and transfer patient�s clinical data between two hospitals in a secure way.</p>
+
+            <h3 style="padding-left: 20px">Specific Objectives</h3>
+            <ul>
+                <li>Character recognition of different Doctors' handwritings</li>
+                <li>Recognize Doctors' handwritten text.</li>
+                <li>Converting Clinical Data  & Transfer Clinical Data</li>
+                <li>Authenticating Clinical Data</li>            
+            </ul>  
+        <h2><b>Literature Survey</b></h2>      
+        <p style="text-align: justify;text-justify: inter-word;">Convolutional neural network (CNN) is one of a major deep learning algorithm that is used for classifying images, cluster them by similarities and perform object recognition within scenes[4]. It performs Optical Character Recognition (OCR) to digitize and make natural language processing possible on the analog and handwritten document, where the images are symbols to be transcribed [4]. There are several architectures available for the
+        Convolutional neural network. Out of those "LeNet" was one of very first convolutional neural network which introduced in 1994 by Yaan LeCun[5],[6]. The LeNet is mainly used for character recognition. The LeNet5 architecture was fundamental, in particular, the insight that image feature is distributed across the entire image and convolutions with learnable parameters are an effective way to extract similar features at multiple locations with few parameters[5]. </p>
+
+        <img src="images/convo.png" width="580px" /><p style="text-align: center;">Figure 1: LeNet architecture</p>
+        <p style="text-align: justify;text-justify: inter-word;">Besides, CNN is comprised of one or more convolutional layers and then followed by one or more fully connected layers as in a standard multilayer neural network[7] and the input and an output layer. Each layer is made up of a set of neurons, where each neuron is fully connected to all neurons in the previous layer[8]. As well as that, CNN ingests and process images as tensors and tensors are matrices of number with additional dimension[4].</p>
+        <ul >
+          <li style="text-align: justify;text-justify: inter-word;">Convolution layer: This layer is mainly used to extract the features from the input image. It preserves the spatial relationship between pixels by learning image features using small squares of input data[6]. </li>
+          
+          <li style="text-align: justify;text-justify: inter-word;">Pooling layer: This layer is basically used to combine the outputs of neuron clusters at one layer into a single neuron in the next layer. As well as that it reduces the spatial size of the representation to reduce the number of parameters and computation in the network and hence also control overfitting[8]. There are several types of pooling layers such as Max, Average, and Sum. </li>
+          
+          <li style="text-align: justify;text-justify: inter-word;">Fully connected layer: This layer is used to connect every neuron in one layer to every neuron in another layer. Based on the high-level output features of the convolutional layer and pooling layer, and training dataset, classify the class of input image in this layer.</li>
+          </ul>
+          <p style="text-align: justify;text-justify: inter-word;">Similar to the LeNet architecture there are several architectures called The Gap, Dan Ciresan Net, AlexNet, VGG, Network-in-Network etc.   Handwritings are differing from person to person. Since try to recognize the characters of different doctor’s handwriting, the first step is to detect the characters by the system. Then it has to segment the detected character as an individual component. There are different segmentation types available such as boxed-discrete input segmentation; the writer once again aids the recognizer in segmenting the writing into individual character, pure cursive writing segmentation[9]. </p>
+          <span class="center"><img src="images/textrec.png" /></span>
+          <p style="text-align: center;">Figure 2: Boxed-discrete segmentation</p>
+          <p style="text-align: justify;text-justify: inter-word;">Text recognition involves several steps including preprocessing, segmentation, feature extraction, classification, post-processing. Preprocessing is used to remove noise, skew, and the slant of an image. When preprocessing is over, the noise-free image is passed to segmentation stage and segment individual character of the image. Before character segmentation, the text has to segment from the sentences by using white space. Then segmented text should segment into character using character size. After that feature extraction is done by using OCR. Finally, do the classification and postprocessing[10][11]. There are three steps available to detect characters in three font styles in a range of font size. The first step is detection. In the detection stage, it extracts the only the text area with noise free as a binary image from the original image. Then it passes to the recognition stage. In this step, the characters identified as letters and the images will be converted into text. It has several steps to identify the letters. Those are removing the borders, divide the text into rows, divide the rows into words and divide the words into letters. Then the final step is to print out the recognized letters[12]. Text and image region segmentation form a document image can do by using Differential-Processing text extraction concept. The text segmentation is a combination of RBSC and DPTE. It is capable of separating text from simple and overlapping welldefined document layout. RBSC subdivide the document image into a rectangular region of data are stored into blocks of information such as X and Y origin. DEPT is capable of analyzing complex document which includes irregular shapes of images or non-rectangular blocks[13]. The handwritten images input to the system for identifying the handwritten patterns. The image should clear to get actual information. Template correction method is used for identifying images. There are three parts to this technique, building the template, image match, and template correction and object recognition. These techniques apply to high-resolution images and objects and identify the objects in the images. The image can be consisting of degraded quality due to poor quality equipment, data transmission issues etc. There are several types of noises Impulse noise, Amplifier noise, Short noise which are the case for low-quality images. Those type of images can be recreated by removing noise or unnecessary data from the original image[14]. Template matching used to identify similarities between two objects. It can be categorized into area-based approaches and feature-based approaches. In the area-based approach, there are some cases which direct matching of the template and target image is not easy. Split the template image into sub-images and perform matching can be used as a solution. In native template matching usually without scaling the target image scan[15]. </p>
+            <!--        <h2>Headings</h2>
+                    <p>These are the different heading formats:</p>-->
+            <span class="center"><img src="images/template.png"/></span>
+            <p style="text-align: center;">Figure 3: Template matching[7]</p>
+            <p style="text-align: justify;text-justify: inter-word;">Template matching technique for searching words in document images used to search and find the location of a small part of the image in the large image and used in Optical Character Recognition and search and convert scanned image to text. This technique can be used to compare single characters and multiple characters from a word document. Input image capture and store an image file format JPG/JPEG, PNG, TIFF etc. Characters detect using a template string. Converted color image converts into a black and white image which is called binary image. Normalized cross correlation, correlation methods, and performance index method used for the analyzing process.  [16]Furthermore text detection used in the selection of text-based Traffic Signs, First System detects the text-based traffic signs then convert those images to 2-D frame. The dimensions and heights of road signs are fixed. To detect symbol-based traffic signs this system uses MSER (Maximally Stable Extremal Region) and HSV (Hue Saturation and Value)color thresholding. MSER maintain the shape of the image and HSV detect additional text signs. Before reading the text perspective transformation apply vertically align text to improve the detection[17] OCR (Optical Character Recognition) belongs to machine recognition technique performing the automatic identification. It identifies objects automatically from the data[11] entered into the system.[18] OCR is a technique which is used to convert the scanned image into editable text format. The results depend on text pre-processing and segmentation algorithms. The performance can be measured using the accuracy and error rate. Images from different formats process and remove noises to enhance the quality. Segmentation algorithm uses to extract words from the image. Then OCR used to classify characters and patterns. The handwritten and printed characters can be recognized using OCR but performance depends on the quality of the input document. [19]The Text to Speech (TTS) conversion technology used to converts scanned or printed text image, handwritten text into editable text. It gets the image and converts color image to grayscale image by threshold operation and Character extracted and resized according to the template size.[20]Character recognition is somewhat challenging due to the persistence of large shapes, scale and format of handwritten papers. Discrete Cosine Transform(DCT) and Binarization use for Character Recognition. Using back propagation neural Network categorize the handwritten numerals.[21]Captcha is a security technique for internet security. The Reading Oriented Overlapping Text(ROOT) based captcha can read both handwritten, and machine-generated patterns which are based on CAPTCHA generation algorithm.[22]Accuracy of handwritten characters can improve using segmentation and zoning and applying pattern recognition using a neural network.[23] </p>
+            <span class="center"><img src="images/quality.png"/></span>
+            <p style="text-align: center;">Figure 4: Image Improve Quality [10]</p>
+            <h3>Medrec</h3>
+            <p style="text-align: justify;text-justify: inter-word;">MedRec is another decentralized record management system which is helpful for handling EMRs (Electronic Medical Records). MedRec is based on blockchain technology and manages authentication, confidentiality, accountability and data sharing. Many different medical stakeholders like researchers, public health authorities are allowed to participate in the network as blockchain “miners”. Patients can easily access their own medical records across providers and treatment sites through MedRec. Also, it keeps track of the logs. MedRec has applied blockchain structure to EMRs. The blockchain uses a public key cryptography technique to create an immutable chain of content. In each participating “node” in the network, there are copies of the blockchain distributed. For the security purposes, blockchain uses “Proof of Work algorithm”. The blockchain is used as a solution for many issues such as fragmented, slow access to medical data, system interoperability, and patient agency.The system is implemented based on four major components; Backend Library, Ethereum Client, Database Gatekeeper and EMR Manager. Miners participation and contribution of their computational resources in the network is needed. So, one of the disadvantages of MedRec is that gas cost has to be paid for the miners. [2]
+            </p>
+            <h3>Blockchain Technology</h3>
+            <p style="text-align: justify;text-justify: inter-word;">The blockchain is a peer-to-peer (P2P) distributed ledger technology with of three main components: a distributed network, a shared ledger, and digital transactions. The blockchain is currently mainly used for Bitcoin.All members of the distributed network keep records digital transactions into a shared ledger. To add transactions, members of the network, run algorithms to verify the relevant transaction. If many numbers of members in the network agree that the transaction is valid, the new transaction is added to the shared ledger.[24]
+            </p>
+            <h3>Ethereum</h3>
+            <p style="text-align: justify;text-justify: inter-word;">Ethereum is a public blockchain based distributed computing platform. It can work as a computer, but the performance will be slower than most of the current computers since it has a transaction time of around 12 seconds.[25]</p>
+            <span class="center"><img src="images/quality.png"/></span> 
+            <p style="text-align: center;">Figure 5: System Implementation Diagram - MedRec</p>
+            <h3>Security</h3>
+            <ul>
+              <li>Blockchain Encryption - In the blockchain, nothing should be stored in plain text. All the information intended for all nodes in the network must be encrypted by a network-shared key. And the responsive information should be encrypted by the originating node.[26]</li>
+              <li>Smart Contracts - Directly controls the transactions under certain conditions on the blockchain. These contracts are stored on the blockchain. This system has basically two implementations of the smart contracts; to send data and files to the blockchain.</li>
+            </ul>
+
+            <h2><b>Technologies Used</b></h2>
+            <ul>
+                <li>Python</li>
+                <li>Open CV</li>
+                <li>Convolutional Neural Networks</li>
+                <li>K Nearest Neighbor</li>
+                <li>HL7</li>
+                <li>Ethereum</li>
+                <li>Blockchain</li>
+
+            </ul>
+            <h2><b>References</b></h2>
+            <ul>
+                <li>[1] "New App | read doctor’s orders | bad writing | technology | electronics | MTspace." .</li>
+                <li>   [2]  "3 Free Android Apps with Handwriting Recognition Capability – supportz." .</li>
+                <li>    [3] "Blockchain Technology for Secure Storage and Transfer of Electronic Health Records."</li>
+                <li>    [4] "Convolutional Neural Network (CNN)." .</li>
+                <li>    [5] "The History of Neural Networks - Dataconomy." .</li>
+                <li>    [6] "USE OF CONVOLUTIONAL NEURAL NETWORK FOR IMAGE CLASSIFICATION."" .</li>
+                <li>    [7] "Unsupervised Feature Learning and Deep Learning Tutorial." .</li>
+                <li>    [8] "CS231n Convolutional Neural Networks for Visual Recognition." .</li>
+                <li>    [9] H. S. M. Beigi, "An Overview of Handwriting Recognition," Proc. 1 st Annu. Conf. Technol. Adv. Dev. Ctries., no. June, pp. 30–46, 1993.</li>
+                <li>    [10]  M. R. Patil MrAudumbar R Misal MrKetan R Nalawade, "Survey paper on Text Recognition Using Image Processing," Int. J. Adv. Res. Electron. Commun. Eng., vol. 4, no. 3, 2015.</li>
+                <li>    [11]  M. June, C. Mizan, T. Chakraborty, and S. Karmakar, "Available Online at www.ijarcs.info Text Recognition using Image Processing," vol. 8, no. 5, pp. 765–768, 2017.</li>
+                <li>    [12]  M. Al-Shabi, "Text detection and character recognition using fuzzy image processing," J. Electr. Eng., vol. 57, no. 5, pp. 258–267, 2006.</li>
+                <li>    [13]  N. Avenue, "TEXT SEGMENTATION FOR AUTOMATIC DOCUMENT PROCESSING," pp. 642–648, 1996.</li>
+                <li>    [14]  D. Gupta and S. Goswami, "Object Recognition based on Template Matching and Correlation Method in Hyperspectral Images Divya Gupta," Int. J. Comput. Appl., vol. 166, no. 11, pp. 38–43, 2017.</li>
+                <li>    [15]  N. S. Hashemi, R. B. Aghdam, A. S. B. Ghiasi, and P. Fatemi, "Template Matching Advances and Applications in Image Analysis," Am. Sci. Res. J. Eng. Technol. Sci., pp. 91–96, 2016.</li>
+                <li>    [16]  V. S and S. A, "Template Matching Technique for Searching Words in Document Images," Int. J. Cybern. Informatics, vol. 4, no. 6, pp. 25–35, 2015.</li>
+                <li>   [17] J. Greenhalgh and M. Mirmehdi, "Recognizing text-based traffic signs," IEEE Trans. Intell. Transp. Syst., vol. 16, no. 3, pp. 1360–1369, 2015.</li>
+                <li>   [18] A. Chaudhuri, K. Mandaviya, P. Badelia, and S. K Ghosh, Optical Character Recognition Systems for Different Languages with Soft Computing, vol. 352. 2017.</li>
+                <li>   [19] V. S and S. A, "Performance Comparison of OCR Tools," Int. J. UbiComp, vol. 6, no. 3, pp. 19–30, 2015.</li>
+                <li>   [20] G. K. Sagar, "Real Time Implementation of Optical Character Recognition Based TTS System using Raspberry pi," no. 7, pp. 149–156, 2017.</li>
+                <li>   [21] A. Sethy and P. K. Patra, "Off-line Odia handwritten numeral recognition using neural network: A comparative analysis," Proceeding - IEEE Int. Conf. Comput. Commun. Autom. ICCCA 2016, pp. 1099–1103, 2017.</li>
+                <li>   [22] A. Thakur, R. Chaware, S. Nikhil, and S. K. Hafizul Islam, "A Reading Oriented Overlapping Text based CAPTCHA," Int. Conf. Trends Autom. Commun. Comput. Technol. I-TACT 2015, pp. 1–6, 2016.</li>
+                <li>   [23] S. E. Benita Galaxy and S. S. Ebenezer, "Enhancement of segmentation and zoning to improve the accuracy of handwritten character recognition," Int. Conf. Electr. Electron. Optim. Tech. ICEEOT 2016, pp. 4732–4735, 2016.</li>
+                <li>   [24] L. A. Linn and M. B. Koo, "Blockchain For Health Data and Its Potential Use in Health IT and Health Care Related Research," U.S. Dep. Heal. Hum. Serv., pp. 1–10, 2016.</li>
+                <li>   [25] S. Huh, S. Cho, and S. Kim, "Managing IoT devices using blockchain platform," Int. Conf. Adv. Commun. Technol. ICACT, pp. 464–467, 2017.</li>
+                <li>   [26] K. Peterson, R. Deeduvanu, P. Kanjamala, and K. Boles, "A Blockchain-Based Approach to Health Information Exchange Networks," Mayo Clin., no. 1, p. 10, 2016.</li>
+                <li>   [27] "REF I12 - Patient referral (HL7 v2.7)." .</li>
+            </ul>
+            
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
+       <p>
+          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
+       </p>    
+    </div>
+  </div>
+</body>
+</html>

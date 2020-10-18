@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Medswift- Domain</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/jQuery-3.5.js"></script>
+  <script>
+    var para = "";
+    var para1="";
+    var para2 = "";
+    var para3="";
+    var para4 = "";
+    $(document).ready(function()
+    {
+       para = $('#para').html();
+       para1 = $('#para1').html();
+       para2 = $('#para2').html();
+       para3 = $('#para3').html();
+       para4 = $('#para4').html();
+            
+    });
+    
+    function searchData(){
+     
+      var text=document.getElementById("search_field").value;
+       if(text)
+       {        
+        var pattern=new RegExp("("+text+")", "gi");
+
+        var new_text=para.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para").innerHTML=new_text;
+
+        var new_text=para1.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para1").innerHTML=new_text;
+
+        var new_text=para2.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para2").innerHTML=new_text;
+
+        var new_text=para3.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para3").innerHTML=new_text;
+
+        var new_text=para4.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para4").innerHTML=new_text;
+
+       }
+      
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+       <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="content.html">Domain</a></li>
+          <li><a href="milestones.html">Milestones</a></li>
+          <li><a href="document.html">Documents</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner4"></div>
+      <div id="sidebar_container">
+        
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <div>
+                <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </div>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div>
+        <h1 style="text-align: center;"><strong>Domain</strong></h1>
+      </div>
+      <div id="content" >
+        
+        <h2><b>Research Gap</b></h2>
+            <p name="para" id="para">"DioNote"[1] is a mobile applications that can recognize handwritings.</p>
+            <ul>
+              <li>The application cannot recognize the handwritings which are on papers and can only recognize the handwritings which are write on screen.</li>
+              <li>The application is not suitable for Sri Lankan hospitals since each doctor cannot keep a tablet which has stylus to record examinations and prescriptions</li>
+            </ul>
+
+            <p name="para1" id="para1">The Medicalchain[2]  is an application that is used to transfers clinical data through blockchain</p>
+            <ul>
+              <li>It uses permission based Hyperledger Fabric architecture which allows varying access levels. </li>
+              <li>But our system is built using a private Ethereum blockchain which is permissioned. So only the authorized parties can view data.</li>
+            </ul>
+
+          <h2><b>Research Problem</b></h2>
+            <ul>
+              <li>Patient clinical records are responsive data that are needed by hospitals and doctors when a patient is transferred.
+              </li>
+              <li>Currently there does not exist a secure means to transfer for this information.</li> 
+              <li>Patient clinical records are currently stored in paper format. </li>
+              <li>These paper documents contain doctors' handwriting which are known to be difficult to comprehend. </li>
+              <li>In turn this may lead to miss interpretation of the patient records, which can lead to harmful outcomes. </li>
+            </ul>
+
+            <h2><b>Research Objectives</b></h2>
+            <h3 style="padding-left: 20px">Main Objective</h3>
+            <p style="text-align: justify;text-justify: inter-word;">The project Digitized Clinical Data Transfer using Digital Ledger�s main objective is to provide features for digitizing handwritten paper document and transfer patient�s clinical data between two hospitals in a secure way.</p>
+
+            <h3 style="padding-left: 20px">Specific Objectives</h3>
+            <ul>
+                <li>Character recognition of different Doctors' handwritings</li>
+                <li>Recognize Doctors' handwritten text.</li>
+                <li>Converting Clinical Data  & Transfer Clinical Data</li>
+                <li>Authenticating Clinical Data</li>            
+            </ul>  
+        <h2><b>Literature Survey</b></h2>      
+        <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">Convolutional neural network (CNN) is one of a major deep learning algorithm that is used for classifying images, cluster them by similarities and perform object recognition within scenes[4]. It performs Optical Character Recognition (OCR) to digitize and make natural language processing possible on the analog and handwritten document, where the images are symbols to be transcribed [4]. There are several architectures available for the
+        Convolutional neural network. <a href="domain.html">Read more.....</a> </p>
+
+        <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">Template matching technique for searching words in document images used to search and find the location of a small part of the image in the large image and used in Optical Character Recognition and search and convert scanned image to text. This technique can be used to compare single characters and multiple characters from a word document. Input image capture and store an image file format JPG/JPEG, PNG, TIFF etc. Characters detect using a <a href="domain.html">Read more.....</a></p>
+           
+        <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">MedRec is  decentralized record management system which is helpful for handling EMRs (Electronic Medical Records). MedRec is based on blockchain technology and manages authentication, confidentiality, accountability and data sharing. Many different medical stakeholders like researchers, public health authorities are allowed to participate in the network as blockchain “miners”. Patients can easily <a href="domain.html">Read more.....</a>
+            </p>
+            
+            </ul>
+
+            <h2><b>Technologies Used</b></h2>
+            <ul>
+                <li>Python</li>
+                <li>Open CV</li>
+                <li>Convolutional Neural Networks</li>
+                <li>K Nearest Neighbor</li>
+                <li>HL7</li>
+                <li>Ethereum</li>
+                <li>Blockchain</li>
+
+            </ul>
+            <h2><b>References</b></h2>
+            <ul>
+                <li>[1] "New App | read doctor’s orders | bad writing | technology | electronics | MTspace." .</li>
+                <li>   [2]  "3 Free Android Apps with Handwriting Recognition Capability – supportz." .</li>
+                <li>    [3] "Blockchain Technology for Secure Storage and Transfer of Electronic Health Records."</li>
+                <li>    [4] "Convolutional Neural Network (CNN)." .</li>                
+            </ul>
+            <a href="domain.html">More reference.....</a>
+            
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
+       <p>
+          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
+       </p>    
+    </div>
+  </div>
+</body>
+</html>

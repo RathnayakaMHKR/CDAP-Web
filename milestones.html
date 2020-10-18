@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Medswift- Milestones</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/jQuery-3.5.js"></script>
+  <script>
+    var para1 = "";
+    var para2 = "";
+    var para3 = "";
+    var para4 = "";
+    var para5 = "";
+    var para6 = "";
+    var para7 = "";
+    var para8 = "";
+    $(document).ready(function()
+    {
+       para1 = $('#para1').html();
+       para2 = $('#para2').html();
+       para3 = $('#para3').html();
+       para4 = $('#para4').html();
+       para5 = $('#para5').html();
+       para6 = $('#para6').html();
+       para7 = $('#para7').html();
+       para7 = $('#para8').html();
+            
+    });
+    
+    function searchData(){
+     
+      var text=document.getElementById("search_field").value;
+       if(text)
+       {        
+        var pattern=new RegExp("("+text+")", "gi");
+
+        var new_text=para1.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para1").innerHTML=new_text;
+
+        var new_text=para2.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para2").innerHTML=new_text;
+
+        var new_text=para3.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para3").innerHTML=new_text;
+
+        var new_text=para4.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para4").innerHTML=new_text;
+
+        var new_text=para5.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para5").innerHTML=new_text;
+
+        var new_text=para6.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para6").innerHTML=new_text;
+
+        var new_text=para7.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para7").innerHTML=new_text;
+
+        var new_text=para8.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para8").innerHTML=new_text;
+
+       }
+      
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="content.html">Domain</a></li>
+          <li class="selected"><a href="milestones.html">Milestones</a></li>
+          <li><a href="document.html">Documents</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner2"></div>
+      <div id="sidebar_container">
+       
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <div>
+                <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </div>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div>
+        <h1 style="text-align: center;"><strong>Milestones</strong></h1>
+      </div>
+      <div id="content">
+        <p name="para1" id="para1" style="text-align: justify;text-justify: inter-word;">Within the framework of project management, a milestone is an event that uses to mark specific point along the project timeline. These points may signal anchors such as a project start and end date, a need for external review or input and budget checks, among others. In many instances, milestones do not impact project duration. Instead, they focus on major progress points that must be reached to achieve success. </p>
+
+        <div>
+          <h1><u><img src="images/april23.png" height="120px" width="120px"> Project Proposal</u></h1>
+          <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">The initial pitch to present our idea to the panel of stakeholders. An overview of the research methodology, problem, objectives and conceptual outcome.</p>
+          <p>Date submitted: 2018.04.23</p>
+          <p>Marks allocated: 10</p>
+        </div>  
+
+        <div>
+          <h1><u><img src="images/may15.png" height="120px" width="120px"> Project SRS</u></h1>
+          <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">A detailed and official explanation of the specific requirements and implementation of the system. A brief idea of the overall scope of the product and how it will benefit the user was presented.</p>
+          <p>Date submitted: 2018.05.15</p>
+          <p>Marks allocated: 06</p>
+        </div>  
+
+        <div>
+          <h1><u><img src="images/june21.png" height="120px" width="120px"> Project Progress Presentation (I)</u></h1>
+          <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">Demo time. A working prototype with most functionality implemented was presented along with a concise explanation of the inner workings of it.</p>
+          <p>Date submitted: 2018.06.21</p>
+          <p>Marks allocated: 10</p>
+        </div>  
+
+        <div>
+          <h1><u><img src="images/sep3.png" height="120px" width="120px"> Project Mid Review </u></h1>
+          <p name="para5" id="para5" style="text-align: justify;text-justify: inter-word;">Mid Review Report is the draft of the document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.Simply it is a draft of "dissertation". At the same time the presentation was conducted to evaluate the progress of the project.</p>
+          <p>Date submitted: 2018.09.03</p>
+          
+        </div> 
+
+        <div>
+          <h1><u><img src="images/sep28.png" height="120px" width="120px"> Project Progress Presentation (II) </u></h1>
+          <p name="para6" id="para6" style="text-align: justify;text-justify: inter-word;">Demo time. A working prototype which completed 90% from implemetation was presented along with a concise explanation of the inner workings of it and poster exhibition. </p>
+          <p>Date submitted: 2018.09.28</p>
+          <p>Marks allocated: 18</p>
+        </div>  
+
+        <div>
+          <h1><u><img src="images/nov12.png" height="120px" width="120px"> Project Final Presentation </u></h1>
+          <p name="para7" id="para7" style="text-align: justify;text-justify: inter-word;">Final report is the document submitted in support of candidature for an academic degree or professional qualification presenting the author's research and findings.This is aloso known as "dissertation" which is a part of a bachelor's degree. The presentation will be held to evaluate the final outcome of the research.</p>
+          <p>Date submitted: 2018.11.12</p>
+          <p>Marks allocated: 10</p>
+        </div> 
+
+        <div>
+          <h1><u><img src="images/nov12.png" height="120px" width="120px"> Viva Session </u></h1>
+          <p name="para8" id="para8" style="text-align: justify;text-justify: inter-word;">Viva will be held to evaluate the individual performance and contribution for the research.</p>
+          <p>Date submitted: 2018.11.12</p>
+          <p>Marks allocated: 15</p>
+        </div>  
+
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
+       <p>
+          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
+       </p>    
+    </div>
+  </div>
+</body>
+</html>
