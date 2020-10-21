@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6
   padding: 0 0 5px 0;}
 
 h1, h2, h3
-{ font: normal 190% times new roman, times new roman;
+{ font: normal 300% times new roman, times new roman;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
   color: #000;}
@@ -98,7 +98,7 @@ ol li
   margin-right: auto;}
 
 #header
-{ background-image: url(medswift.png),url(background.png);
+{ background-image: url(logo.png),url(bck3.jpg);
   background-position: 5% 50%, left top;
   background-repeat: no-repeat, no-repeat;
   background-size: 120px 120px,cover;
@@ -128,17 +128,17 @@ ol li
   margin-bottom: 20px;
   border: 10px solid #DDD;}
 #banner4
-{  background: transparent url(../images/domain.jpg) no-repeat;
+{  background: transparent url(../images/) no-repeat;
   background-size: 860px 240px;
   width: 860px;
   height: 240px;
   margin-bottom: 20px;
-  border: 10px solid #DDD;}
+  border: 10px solid #BCC6CC;}
 #logo
 { width: 880px;
   position: relative;
   height: 140px;
-  background: #034f84;}
+  background: #3090C7;}
 
 #logo #logo_text 
 { position: absolute; 
@@ -146,7 +146,7 @@ ol li
   left: 0;}
 
 #logo h1, #logo h2
-{ font: normal 300% times new roman, times new roman, times new roman;
+{ font: normal 235% times new roman, times new roman, times new roman;
   border-bottom: 0;
   text-transform: none;
   margin: 0 0 0 9px;}
@@ -158,7 +158,7 @@ ol li
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #00C6F0;}
+{ color: #FFFFFF;}
 
 #logo_text a:hover .logo_colour
 { color: #DDD;}
@@ -172,7 +172,7 @@ ol li
 { width: 872px;
   height: 45px;
   padding-right: 8px;
-  background: #bccad6;
+  background: #BCC6CC;
   border-top: 1px solid #CCC;} 
 
 ul#menu
@@ -186,7 +186,7 @@ ul#menu li
   margin: 8px 4px 0 4px;}
 
 ul#menu li a
-{ font: normal 100% times new roman, times new roman;
+{ font: normal 115% times new roman, times new roman;
   display: block; 
   float: left; 
   height: 20px;
@@ -194,7 +194,7 @@ ul#menu li a
   text-align: center;
   color: #FFF;
   text-decoration: none;
-  background: #BBB;} 
+  background: #BCC6CC;} 
 
 ul#menu li.selected a
 { height: 20px;
@@ -202,11 +202,11 @@ ul#menu li.selected a
 
 ul#menu li.selected
 { margin: 8px 4px 0 13px;
-  background: #00C6F0;}
+  background: #3090C7;}
 
 ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: #00C6F0;
-  color: #FFF;}
+{ background: #AFDCEC;
+  color: #6D6968;}
 
 ul#menu li a:hover
 { color: #323232;}
@@ -290,7 +290,7 @@ ul#menu li a:hover
   height: 80px;
   padding: 28px 0 5px 0;
   text-align: center; 
-  background-image: url(background.png);
+  background-image: url(bck3.jpg);
   background-position:left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -382,14 +382,77 @@ table tr td
   color: #47433F;
   border-top: 1px solid #FFF;}
 
-.document {
-  
-  font: 120% times new roman;
-  
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
+.column {
+  float: left;
+  width: 15%;
+  padding: 7px;
+}
+
+.column a:hover{
+  opacity: 0.3;
+}
+
+.banner4{
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.scrolling-box {
+  background-color: #eaeaea;
+  display: block;
+  height: 100%;
+  overflow-y: scroll;
+  text-align: center;
+  width: 100%;
+}
+
+.zoomin img {
+      height: 400px;
+      width: 500px;
+      -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+    }
+    .zoomin img:hover {
+      width: 750px;
+      height: 650px;
+    }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.document {
+  font: 120% times new roman;
+}
 .highlight
 {
  background-color:yellow;
- 
 }
