@@ -10,56 +10,76 @@
   <script src="js/jQuery-3.5.js"></script>
   <script>
     var para = "";
-    var para1="";
+    var para1 = "";
     var para2 = "";
-    var para3="";
+    var para3 = "";
     var para4 = "";
-    $(document).ready(function()
-    {
-       para = $('#para').html();
-       para1 = $('#para1').html();
-       para2 = $('#para2').html();
-       para3 = $('#para3').html();
-       para4 = $('#para4').html();
-            
+    $(document).ready(function () {
+      para = $('#para').html();
+      para1 = $('#para1').html();
+      para2 = $('#para2').html();
+      para3 = $('#para3').html();
+      para4 = $('#para4').html();
+
     });
-    
-    function searchData(){
-     
-      var text=document.getElementById("search_field").value;
-       if(text)
-       {        
-        var pattern=new RegExp("("+text+")", "gi");
 
-        var new_text=para.replace(pattern, "<span class='highlight'>"+text+"</span>");
-        document.getElementById("para").innerHTML=new_text;
+    function searchData() {
 
-        var new_text=para1.replace(pattern, "<span class='highlight'>"+text+"</span>");
-        document.getElementById("para1").innerHTML=new_text;
+      var text = document.getElementById("search_field").value;
+      if (text) {
+        var pattern = new RegExp("(" + text + ")", "gi");
 
-        var new_text=para2.replace(pattern, "<span class='highlight'>"+text+"</span>");
-        document.getElementById("para2").innerHTML=new_text;
+        var new_text = para.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        document.getElementById("para").innerHTML = new_text;
 
-        var new_text=para3.replace(pattern, "<span class='highlight'>"+text+"</span>");
-        document.getElementById("para3").innerHTML=new_text;
+        var new_text = para1.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        document.getElementById("para1").innerHTML = new_text;
 
-        var new_text=para4.replace(pattern, "<span class='highlight'>"+text+"</span>");
-        document.getElementById("para4").innerHTML=new_text;
+        var new_text = para2.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        document.getElementById("para2").innerHTML = new_text;
 
-       }
-      
+        var new_text = para3.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        document.getElementById("para3").innerHTML = new_text;
+
+        var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        document.getElementById("para4").innerHTML = new_text;
+
+      }
+
     }
-
   </script>
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
   <div id="main">
     <div id="header">
       <div id="logo">
-       <div id="logo_text">
+        <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">PERSONALIZED SOLUTION FOR
+                DEMENTIA PATIENTS USING REINFORCEMENT LEARNING</span></a></h1>
 
         </div>
       </div>
@@ -67,110 +87,207 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li><a href="index.html">Home</a></li>
-          <li class="selected"><a href="content.html">Domain</a></li>
+          <li class="selected"><a href="content.html">Scope</a></li>
           <li><a href="milestones.html">Milestones</a></li>
           <li><a href="document.html">Documents</a></li>
+          <li><a href="document.html">Presentations</a></li>
           <li><a href="aboutUs.html">About Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <div id="banner4"></div>
-      <div id="sidebar_container">
-        
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <div>
-                <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+    <div id="content_header">
+      <div id="site_content">
+
+        <div id="sidebar_container">
+
+          <div class="sidebar">
+            <div class="sidebar_top"></div>
+            <div class="sidebar_item">
+              <h3>Search</h3>
+              <div>
+                <input class="search" type="text" name="search_field" id="search_field"
+                  placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+                  alt="Search" title="Search" />
               </div>
+            </div>
+            <div class="sidebar_base"></div>
           </div>
-          <div class="sidebar_base"></div>
         </div>
-      </div>
-      <div>
-        <h1 style="text-align: center;"><strong>Domain</strong></h1>
-      </div>
-      <div id="content" >
+        <div>
+          <h1 style="text-align: center;"><strong>Research Project Scope</strong></h1>
+        </div></br></br>
+        <div id="banner4">
+          <div class="row">
+            <div class="column">
+              <a href="#1"><img src="Images/Problem.jpg" alt="Snow" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <a href="#2"><img src="Images/Gap.jpg" alt="Forest" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <a href="#3"> <img src="Images/Objectives.jpg" alt="Mountains" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <a href="#4"><img src="Images/Methodology.jpg" alt="Mountains" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <a href="#5"><img src="Images/Survey.jpg" alt="Mountains" style="width:100%"></a>
+            </div>
+            <div class="column">
+              <a href="#6"><img src="Images/Technology.jpg" alt="Mountains" style="width:100%"></a>
+            </div>
+          </div>
+        </div>
         
-        <h2><b>Research Gap</b></h2>
-            <p name="para" id="para">"DioNote"[1] is a mobile applications that can recognize handwritings.</p>
-            <ul>
-              <li>The application cannot recognize the handwritings which are on papers and can only recognize the handwritings which are write on screen.</li>
-              <li>The application is not suitable for Sri Lankan hospitals since each doctor cannot keep a tablet which has stylus to record examinations and prescriptions</li>
-            </ul>
+        <div class="scrolling-box">
+          <div id="content">
+            <section id="1">
+              <h2><b>Research Problem</b></h2>
+            </section>
 
-            <p name="para1" id="para1">The Medicalchain[2]  is an application that is used to transfers clinical data through blockchain</p>
             <ul>
-              <li>It uses permission based Hyperledger Fabric architecture which allows varying access levels. </li>
-              <li>But our system is built using a private Ethereum blockchain which is permissioned. So only the authorized parties can view data.</li>
-            </ul>
-
-          <h2><b>Research Problem</b></h2>
-            <ul>
-              <li>Patient clinical records are responsive data that are needed by hospitals and doctors when a patient is transferred.
+              <li>The current prevalence of Dementia in Sri Lanka and all around the world.
               </li>
-              <li>Currently there does not exist a secure means to transfer for this information.</li> 
-              <li>Patient clinical records are currently stored in paper format. </li>
-              <li>These paper documents contain doctors' handwriting which are known to be difficult to comprehend. </li>
-              <li>In turn this may lead to miss interpretation of the patient records, which can lead to harmful outcomes. </li>
+              <li>There are not customized software solutions for Dementia based on user behaviour. </li>
+              <li>Dementia cannot be cured by medications. </li>
+
+            </ul>
+            <section id="2">
+              <h2><b>Research Gap</b></h2>
+            </section>
+
+            <p name="para" id="para">In fact, moving on with mobile application which helps Dementia patients,
+              take through about research gap is most vital for forthcoming researches. While in a conversation
+              about mobile applications that were introduced for Dementia patients mainly supported for English
+              Language,
+              novelty of proposed system is supported both Sinhala and English language which can be mainly suited for
+              elderly
+              population of Dementia.</p>
+            <ul>
+              <img src="Images/table.png" alt="table" style="width:60%">
             </ul>
 
-            <h2><b>Research Objectives</b></h2>
+            <section id="3">
+              <h2><b>Research Objectives</b></h2>
+            </section>
+
             <h3 style="padding-left: 20px">Main Objective</h3>
-            <p style="text-align: justify;text-justify: inter-word;">The project Digitized Clinical Data Transfer using Digital Ledger�s main objective is to provide features for digitizing handwritten paper document and transfer patient�s clinical data between two hospitals in a secure way.</p>
+            <p style="text-align: justify;text-justify: inter-word;">Our proposed application has an ability to overcome
+              those issues.
+              It has games and activities to improve the cognitive functionalities for the Temporal lobe and Frontal
+              lobe from the
+              Cerebral cortex. There are four main subcategories under them as Attention and Concentration, Language,
+              Executive functions
+              and finally Memory. Each game consists of different levels. Reinforcement Learning is used in these games
+              in order to predict
+              the best level for the users. All these games are designed with user friendly interfaces specially for the
+              elder people and
+              in a way suitable for our culture. And the patients can view their progress with the score level as well
+              as the doctor of
+              the relevant patient via a report. Implementation of the application will take over throughout the year.
+            </p>
 
             <h3 style="padding-left: 20px">Specific Objectives</h3>
             <ul>
-                <li>Character recognition of different Doctors' handwritings</li>
-                <li>Recognize Doctors' handwritten text.</li>
-                <li>Converting Clinical Data  & Transfer Clinical Data</li>
-                <li>Authenticating Clinical Data</li>            
-            </ul>  
-        <h2><b>Literature Survey</b></h2>      
-        <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">Convolutional neural network (CNN) is one of a major deep learning algorithm that is used for classifying images, cluster them by similarities and perform object recognition within scenes[4]. It performs Optical Character Recognition (OCR) to digitize and make natural language processing possible on the analog and handwritten document, where the images are symbols to be transcribed [4]. There are several architectures available for the
-        Convolutional neural network. <a href="domain.html">Read more.....</a> </p>
-
-        <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">Template matching technique for searching words in document images used to search and find the location of a small part of the image in the large image and used in Optical Character Recognition and search and convert scanned image to text. This technique can be used to compare single characters and multiple characters from a word document. Input image capture and store an image file format JPG/JPEG, PNG, TIFF etc. Characters detect using a <a href="domain.html">Read more.....</a></p>
-           
-        <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">MedRec is  decentralized record management system which is helpful for handling EMRs (Electronic Medical Records). MedRec is based on blockchain technology and manages authentication, confidentiality, accountability and data sharing. Many different medical stakeholders like researchers, public health authorities are allowed to participate in the network as blockchain “miners”. Patients can easily <a href="domain.html">Read more.....</a>
-            </p>
-            
+              <li>Implement a game to help to increase the Attention and Concentration level of patients.</li>
+              <li>Implement a game to help to increase the Attention and Concentration level of patients.</li>
+              <li>Implement a game to develop Executive Functionalities.</li>
+              <li>Implementation of games to improve the Memory of the patients</li>
+              <li>Only the patient, caregiver and the doctor can view the patient details and scores.</li>
+              <li>Make both patients and caregivers life easier.</li>
+              <li>Slow down the moving from one stage to another stage of Dementia.</li>
+              <li>Giving rehabilitation with continuous monitoring.</li>
             </ul>
+            <section id="4">
+              <h2><b>Methodology</b></h2>
+            </section>
 
-            <h2><b>Technologies Used</b></h2>
+            <p name="para" id="para">In fact, moving on with mobile application which helps Dementia patients,
+              take through about research gap is most vital for forthcoming researches. </p>
             <ul>
-                <li>Python</li>
-                <li>Open CV</li>
-                <li>Convolutional Neural Networks</li>
-                <li>K Nearest Neighbor</li>
-                <li>HL7</li>
-                <li>Ethereum</li>
-                <li>Blockchain</li>
+              <div class="zoomin">
+                <img src="Images/SysArchitect.jpg" alt="table">
+              </div>
+            </ul>
+            <section id="5">
+              <h2><b>Literature Survey</b></h2>
+            </section>
+
+            <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">With the development of the
+              countries in
+              the world, Dementia will be turned into an epidemiology due to the increase of dementia patients aged 60
+              years and older
+              from 19% currently to almost 40% in year 2050. Dementia drastically affects to daily routine and personal
+              activities
+              and at the same time it is often associated with behavioral symptoms, personality change and numerous
+              clinical
+              complications. According to Maria Cristina Polidori, there is epidemiological evidence that lifestyle
+              which is
+              engaged in leisure activities of intellectual and social nature are associated with slower cognitive
+              decline in
+              a healthy way for elderly people and it may reduce the risk of incident dementia. The performance of
+              cognitively
+              stimulating activities according to the personal interests, abilities and education of dementia patients
+              are caused
+              to reduce the passive behaviors of them [1]. <a href="domain.html">Read more.....</a> </p>
+
+            <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">RL is learning through
+              interaction with the
+              environment by taking different actions and experiencing failures and successes while trying to increase
+              the receiving awards.
+              The agent is not advised which action to take. RL is different from Supervised learning, an agent needs to
+              be told what the
+              correct action which is for every position it encounters. RL is different from other branches of ML and it
+              is the third
+              paradigm of ML. Basically, the main components of standard model in RL are policy, reward signal, value
+              function and model [2]. <a href="domain.html">Read more.....</a></p>
+
+            <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">DL algorithms have been
+              mostly used to further
+              enhance the capabilities of computers so that it understands what humans can do, which includes speech
+              recognition. The conventional
+              speech recognition systems are based on representing speech signals using Gaussian Mixture Models (GMM)
+              that are based on HMM. This is since a
+              speech <a href="domain.html">Read more.....</a>
+            </p>
 
             </ul>
+
+            <section id="6">
+              <h2><b>Technologies Used</b></h2>
+            </section>
+
+            <ul>
+              <li>C#</li>
+              <li>Python</li>
+              <li>PlayFab</li>
+              <li>Natural Language Processing </li>
+              <li>Q Learning </li>
+              <li>Unity</li>
+            </ul>
+
             <h2><b>References</b></h2>
             <ul>
-                <li>[1] "New App | read doctor’s orders | bad writing | technology | electronics | MTspace." .</li>
-                <li>   [2]  "3 Free Android Apps with Handwriting Recognition Capability – supportz." .</li>
-                <li>    [3] "Blockchain Technology for Secure Storage and Transfer of Electronic Health Records."</li>
-                <li>    [4] "Convolutional Neural Network (CNN)." .</li>                
+              <li>[1] "Some facts about Dementia and Alzheimer’s disease." .</li>
+              <li> [2] "A Concise Introduction to Reinforcement Learning" .</li>
             </ul>
+
             <a href="domain.html">More reference.....</a>
-            
+
+          </div>
+        </div>
       </div>
     </div>
     <div id="content_footer"></div>
     <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
-       <p>
-          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
-       </p>    
+      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>
+      <p>
+        @ 2020 Sri Lanka Institute of Information Technology.All Rights Reserved.
+      </p>
     </div>
   </div>
 </body>
+
 </html>

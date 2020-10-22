@@ -12,173 +12,451 @@
 <body>
   <div id="main">
     <div id="header">
-      <div id="logo">
-       <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">DIGITIZED CLINICAL DATA TRANSFER USING DIGITAL LEDGER</span></a></h1>
+      <!DOCTYPE HTML>
+      <html>
 
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">Home</a></li>
-          <li class="selected"><a href="content.html">Domain</a></li>
-          <li><a href="milestones.html">Milestones</a></li>
-          <li><a href="document.html">Documents</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <div id="banner4"></div>
-      <div id="sidebar_container">
-        
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <h3>Search</h3>
-            <form method="post" action="#" id="search_form">
-              <p>
-                <input class="search" type="text" name="search_field" placeholder="Enter keywords....." />
-                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-              </p>
-            </form>
+      <head>
+        <title>Medswift- Domain</title>
+        <meta name="description" content="website description" />
+        <meta name="keywords" content="website keywords, website keywords" />
+        <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <script src="js/jQuery-3.5.js"></script>
+        <script>
+          var para = "";
+          var para1 = "";
+          var para2 = "";
+          var para3 = "";
+          var para4 = "";
+          $(document).ready(function () {
+            para = $('#para').html();
+            para1 = $('#para1').html();
+            para2 = $('#para2').html();
+            para3 = $('#para3').html();
+            para4 = $('#para4').html();
+            para5 = $('#para5').html();
+            para6 = $('#para6').html();
+            para 7= $('#para8').html();
+
+          });
+
+          function searchData() {
+
+            var text = document.getElementById("search_field").value;
+            if (text) {
+              var pattern = new RegExp("(" + text + ")", "gi");
+
+              var new_text = para.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para").innerHTML = new_text;
+
+              var new_text = para1.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para1").innerHTML = new_text;
+
+              var new_text = para2.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para2").innerHTML = new_text;
+
+              var new_text = para3.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para3").innerHTML = new_text;
+
+              var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para4").innerHTML = new_text;
+
+              var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para5").innerHTML = new_text;
+
+              var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para6").innerHTML = new_text;
+
+              var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para7").innerHTML = new_text;
+
+              var new_text = para4.replace(pattern, "<span class='highlight'>" + text + "</span>");
+              document.getElementById("para8").innerHTML = new_text;
+
+
+
+            }
+
+          }
+        </script>
+      </head>
+
+      <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+          //Get the button
+          var mybutton = document.getElementById("myBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () { scrollFunction() };
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+        <div id="main">
+          <div id="header">
+            <div id="logo">
+              <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">PERSONALIZED SOLUTION FOR
+                      DEMENTIA PATIENTS USING REINFORCEMENT LEARNING</span></a></h1>
+
+              </div>
+            </div>
+            <div id="menubar">
+              <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li class="selected"><a href="content.html">Scope</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+                <li><a href="document.html">Documents</a></li>
+                <li><a href="document.html">Presentations</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="sidebar_base"></div>
+          <div id="content_header">
+            <div id="site_content">
+
+              <div id="sidebar_container">
+
+                <div class="sidebar">
+                  <div class="sidebar_top"></div>
+                  <div class="sidebar_item">
+                    <h3>Search</h3>
+                    <div>
+                      <input class="search" type="text" name="search_field" id="search_field"
+                        placeholder="Enter keywords....." onkeyup="searchData()" onkeydown="searchData()" />
+                      <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+                        alt="Search" title="Search" />
+                    </div>
+                  </div>
+                  <div class="sidebar_base"></div>
+                </div>
+              </div>
+              <div>
+                <h1 style="text-align: center;"><strong>Research Project Scope</strong></h1>
+              </div></br></br>
+              <div id="banner4">
+                <div class="row">
+                  <div class="column">
+                    <a href="#1"><img src="Images/Problem.jpg" alt="Snow" style="width:100%"></a>
+                  </div>
+                  <div class="column">
+                    <a href="#2"><img src="Images/Gap.jpg" alt="Forest" style="width:100%"></a>
+                  </div>
+                  <div class="column">
+                    <a href="#3"> <img src="Images/Objectives.jpg" alt="Mountains" style="width:100%"></a>
+                  </div>
+                  <div class="column">
+                    <a href="#4"><img src="Images/Methodology.jpg" alt="Mountains" style="width:100%"></a>
+                  </div>
+                  <div class="column">
+                    <a href="#5"><img src="Images/Survey.jpg" alt="Mountains" style="width:100%"></a>
+                  </div>
+                  <div class="column">
+                    <a href="#6"><img src="Images/Technology.jpg" alt="Mountains" style="width:100%"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="scrolling-box">
+                <div id="content">
+                  <section id="1">
+                    <h2><b>Research Problem</b></h2>
+                  </section>
+
+                  <ul>
+                    <li>The current prevalence of Dementia in Sri Lanka and all around the world.
+                    </li>
+                    <li>There are not customized software solutions for Dementia based on user behaviour. </li>
+                    <li>Dementia cannot be cured by medications. </li>
+
+                  </ul>
+                  <section id="2">
+                    <h2><b>Research Gap</b></h2>
+                  </section>
+
+                  <p name="para" id="para">In fact, moving on with mobile application which helps Dementia patients,
+                    take through about research gap is most vital for forthcoming researches. While in a conversation
+                    about mobile applications that were introduced for Dementia patients mainly supported for English
+                    Language,
+                    novelty of proposed system is supported both Sinhala and English language which can be mainly suited
+                    for
+                    elderly
+                    population of Dementia.</p>
+                  <ul>
+                    <img src="Images/table.png" alt="table" style="width:60%">
+                  </ul>
+
+                  <section id="3">
+                    <h2><b>Research Objectives</b></h2>
+                  </section>
+
+                  <h3 style="padding-left: 20px">Main Objective</h3>
+                  <p style="text-align: justify;text-justify: inter-word;">Our proposed application has an ability to
+                    overcome
+                    those issues.
+                    It has games and activities to improve the cognitive functionalities for the Temporal lobe and
+                    Frontal
+                    lobe from the
+                    Cerebral cortex. There are four main subcategories under them as Attention and Concentration,
+                    Language,
+                    Executive functions
+                    and finally Memory. Each game consists of different levels. Reinforcement Learning is used in these
+                    games
+                    in order to predict
+                    the best level for the users. All these games are designed with user friendly interfaces specially
+                    for the
+                    elder people and
+                    in a way suitable for our culture. And the patients can view their progress with the score level as
+                    well
+                    as the doctor of
+                    the relevant patient via a report. Implementation of the application will take over throughout the
+                    year.
+                  </p>
+
+                  <h3 style="padding-left: 20px">Specific Objectives</h3>
+                  <ul>
+                    <li>Implement a game to help to increase the Attention and Concentration level of patients.</li>
+                    <li>Implement a game to help to increase the Attention and Concentration level of patients.</li>
+                    <li>Implement a game to develop Executive Functionalities.</li>
+                    <li>Implementation of games to improve the Memory of the patients</li>
+                    <li>Only the patient, caregiver and the doctor can view the patient details and scores.</li>
+                    <li>Make both patients and caregivers life easier.</li>
+                    <li>Slow down the moving from one stage to another stage of Dementia.</li>
+                    <li>Giving rehabilitation with continuous monitoring.</li>
+                  </ul>
+                  <section id="4">
+                    <h2><b>Methodology</b></h2>
+                  </section>
+
+                  <p name="para" id="para">In fact, moving on with mobile application which helps Dementia patients,
+                    take through about research gap is most vital for forthcoming researches. </p>
+                  <ul>
+                    <div class="zoomin">
+                      <img src="Images/SysArchitect.jpg" alt="table">
+                    </div>
+                  </ul>
+                  <section id="5">
+                    <h2><b>Literature Survey</b></h2>
+                  </section>
+
+                  <p name="para1" id="para1" style="text-align: justify;text-justify: inter-word;">With the development
+                    of the
+                    countries in
+                    the world, Dementia will be turned into an epidemiology due to the increase of dementia patients
+                    aged 60
+                    years and older
+                    from 19% currently to almost 40% in year 2050. Dementia drastically affects to daily routine and
+                    personal
+                    activities
+                    and at the same time it is often associated with behavioral symptoms, personality change and
+                    numerous
+                    clinical
+                    complications. According to Maria Cristina Polidori, there is epidemiological evidence that
+                    lifestyle
+                    which is
+                    engaged in leisure activities of intellectual and social nature are associated with slower cognitive
+                    decline in
+                    a healthy way for elderly people and it may reduce the risk of incident dementia. The performance of
+                    cognitively
+                    stimulating activities according to the personal interests, abilities and education of dementia
+                    patients
+                    are caused
+                    to reduce the passive behaviors of them [1].</p>
+                  <center><img src="Images/population.jpg" alt="table">
+                    <p style="text-align: center;">Figure 1: Dementia around the world</p>
+                  </center>
+                  <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">When seeking for the
+                    alternatives for the dementia, technology can be used to connect dementia patients and treat those
+                    patients considerably individualizing the care between patient and caregiver according to their own
+                    needs. Christina Yamagata, Marc Kowtko, Jean F. Coppola, Shannon Joyce focused on the mobile devices
+                    as a new solution to stimulate the cognition of older adults and other patients suffering from
+                    different types of dementia. And the use of brain, memory, and solving problems using different
+                    types of games help to stimulate the brain and reduce the symptoms of dementia. The brain games,
+                    other mobile-based and computer-based solution for the stimulation therapy has enlightened the
+                    health care of dementia patients [2]. </p>
+                  <h3>Reinforcement Learning</h3>
+                  <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">Reinforcement
+                    Learning is learning
+                    through
+                    interaction with the
+                    environment by taking different actions and experiencing failures and successes while trying to
+                    increase
+                    the receiving awards.
+                    The agent is not advised which action to take. RL is different from Supervised learning, an agent
+                    needs to
+                    be told what the
+                    correct action which is for every position it encounters. RL is different from other branches of ML
+                    and it
+                    is the third
+                    paradigm of ML. Basically, the main components of standard model in RL are policy, reward signal,
+                    value
+                    function and model [3].</p>
+                  <center><img src="Images/RL.png" alt="table">
+                    <p style="text-align: center;">Figure 2: Interaction between agent and environment</p>
+                  </center>
+                  <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">In any step, the
+                    agent observes a
+                    state of the environment and receives a reward signal. Based on the current state and agent’s
+                    behavior function at
+                    given time, which is called as policy, the agent chooses an action to take. This action is then sent
+                    to the
+                    environment which is updated and the loop repeats. This is how agent-environment interface works in
+                    RL [4]. </p>
+                  <h3>Q Learning Algorithm</h3>
+                  <p name="para5" id="para5" style="text-align: justify;text-justify: inter-word;">Q-learning is a
+                    reinforcement learning technique where the learner assembles steadily a Q-function which attempts to
+                    measure the limited potential rewards for taking activity from given states. The output yield of
+                    Q-function for the state s furthermore, activity is appeared in equation (1). Q-values are as a rule
+                    hidden away investigate the table. Officially a Q-learning can be described as follows: </p>
+                  <ul>
+                    <p>Initialize Q(s, a) arbitrarily </br>
+                      Repeat (for each episode) </br>
+                      Initialize s </br>
+                      Repeat (for each step of episode): </br>
+                      Choose a from s using policy derived from Q </br>
+                      Take action a, observe r, s’ </br>
+                      Q(s, a) = Q(s, a) + α [r+ γ maxa’ Q(s’, a’) - Q(s, a)] </br>
+                      s← s’ ; </br>
+                      Until s is terminal
+                  </ul>
+                  <p name="para6" id="para6" style="text-align: justify;text-justify: inter-word;">According to Ajay
+                    Subramanian, Sharad Chitlangia, Veeky Baths model-based learning and model-free learning are
+                    sub-categories of RL. In model-free methods, it updates value functions through data collection
+                    directly from the environment. Model-based methods build a model of the environment which can be
+                    used to generate more data by using the collected data [5]. In games, machine learning can be used
+                    for different purposes. RL has its several algorithms, for example Q-learning, SARSA, DQN, and DDPG.
+                    From those, Q-learning and SARSA are model-free algorithms [6]. Short-term cognitive training had
+                    positive effects on reasoning and speed of processing performance well.</p>
+
+                  <h3>Speech Recognition using Deep Learning</h3>
+                  <p name="para7" id="para7" style="text-align: justify;text-justify: inter-word;">Over the previous
+                    decades, a huge amount of research has been done on the use of machine learning for speech
+                    processing applications, especially speech recognition. However, in the past few years, researches
+                    have focused on utilizing deep learning for speech-related applications. This new area of machine
+                    learning has yielded far better results when compared to others in a variety of applications
+                    including speech, and thus became a very attractive area. Deep learning models can also operate as a
+                    greedy layer wise unsupervised pre-training. This means that it will learn hierarchy from extracted
+                    features from each layer at a time. </p>
+
+                  <p name="para8" id="para8" style="text-align: justify;text-justify: inter-word;">DL algorithms have
+                    been
+                    mostly used to further
+                    enhance the capabilities of computers so that it understands what humans can do, which includes
+                    speech
+                    recognition. The conventional
+                    speech recognition systems are based on representing speech signals using Gaussian Mixture Models
+                    (GMM)
+                    that are based on HMM. This is since a speech signal can be considered as a piecewise stationary
+                    signal or in other terms a short time stationary signal. In this short time scale, the speech signal
+                    can be approximated as a stationary process, thus it can be thought of as a Markov model for many
+                    stochastic processes. However, the Convolutional Neural Networks (CNN) have shown effectiveness when
+                    using in computer vision or image recognition tasks. Also, with some appropriate changes in the CNN
+                    for image analysis purposes such that it incorporates speech properties, the CNN can be utilized in
+                    speech recognition as well [7]. Automatic Speech Recognition (ASR) systems convert the speech
+                    signal into its corresponding text. Traditional ASR systems are based on GMM. End-to-end ASR systems
+                    are gaining much popularity due to simplified model-building process and abilities to directly map
+                    speech into the text without any predefined alignments. Three major types of end-to-end
+                    architectures for ASR are attention-based methods, connectionist temporal classification, and
+                    CNN-based direct raw speech model. End-to-end model may take raw speech signal as input and
+                    generates phoneme class conditional probabilities as output [8].
+                  </p>
+
+                  <img src="Images/Figure 1.jpg" alt="table">
+                  <p style="text-align: center;">Figure 3: General framework of automatic speech recognition system </p>
+                  <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">Deep learning methods
+                    are being applied in various recognition tasks for recognizing images, speech, and different kinds
+                    of music. CNN especially shows remarkable recognition performance for computer vision tasks. In
+                    addition, RNNs show considerable success in many sequential data processing tasks. Investigating the
+                    result of the SER algorithm is based on CNNs and RNNs trained using an emotional speech database.
+                    Deep learning involves hierarchical representations with increasing levels of abstraction. By
+                    traversing sequentially constructed networks, the results corresponding to each selected audio frame
+                    are classified using a sum of probabilities [9]. </p>
+                  <center><img src="Images/Figure 2.jpg" alt="table">
+                    <p style="text-align: center;">Figure 4: Block diagram of our time distributed network-based SER
+                      method </p>
+                  </center>
+                  <section id="6">
+                    <h2><b>Technologies Used</b></h2>
+                  </section>
+
+                  <ul>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>PlayFab</li>
+                    <li>Natural Language Processing </li>
+                    <li>Hidden Markov Models </li>
+                    <li>Q Learning </li>
+                    <li>Unity</li>
+                  </ul>
+                  <h2><b>References</b></h2>
+                  <ul>
+                    <li>[1] Allianz Sri Lanka | Motor Insurance | Life Insurance | General Insurance. (2020). Some facts
+                      about Dementia and Alzheimer’s disease. [online] Available at:
+                      https://www.allianz.lk/articles/facts-dementia-alzheimers-disease/ [Accessed 21 Jan. 2020]. </li>
+                    <li>[2] C. Yamagata, J. Coppola, M. Kowtko and S. Joyce, "Mobile app development and usability
+                      research to help dementia and Alzheimer patients", 2013 IEEE Long Island Systems, Applications and
+                      Technology Conference (LISAT), 2013. Available:
+                      https://www.semanticscholar.org/paper/Mobile-app-development- and-usability-research-to-Yamagata-
+                      Kowtko/7d651e28e7f9c1a83dbe04a64a0881bd7a2b9f30. [Accessed 15 July 2020]. </li>
+                    <li>[3] A. Hammoudeh, "A Concise Introduction to Reinforcement Learning", 2018.
+                      https://www.researchgate.net/publication/323178749_A_Concise_Introduction_to_Reinforcement_Learning.
+                      [Accessed 15 July 2020]. [Accessed 15 July 2020]. </li>
+                    <li>[4] C. Yu, J. Liu and S. Nemati, "Reinforcement Learning in Healthcare: A Survey", arXiv.org,
+                      2019. [Online]. Available: https://arxiv.org/abs/1908.08796. [Accessed: 15- Jul- 2020]. </li>
+                    <li>[5] A. Subramanian, S. Chitlangia and V. Baths, "Psychological and Neural Evidence for
+                      Reinforcement Learning: A Survey", arXiv.org, 2007. [Online]. Available:
+                      https://arxiv.org/abs/2007.01099. [Accessed: 15- Jul- 2020]. </li>
+                    <li>[6] M. Samsuden, N. Diah and N. Rahman, "A Review Paper on Implementing Reinforcement Learning
+                      Technique in Optimising Games Performance", 2019 IEEE 9th International Conference on System
+                      Engineering and Technology (ICSET), 2019. Available: https://ieeexplore.ieee.org/document/8906400.
+                      [Accessed 15 July 2020]. </li>
+                    <li>[7] A. Nassif, I. Shahin, I. Attili, M. Azzeh and K. Shaalan, "Speech Recognition Using Deep
+                      Neural Networks: A Systematic Review", IEEE Access, vol. 7, pp. 19143-19165, 2019. Available:
+                      https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8632885. [Accessed 15 July 2020]. </li>
+                    <li>[8] V. Passricha and R. Kumar Aggarwal, "Convolutional Neural Networks for Raw Speech
+                      Recognition", From Natural to Artificial Intelligence - Algorithms and Applications, 2018.
+                      Available:
+                      https://www.researchgate.net/publication/329599499_Convolutional_Neural_Networks_for_Raw_Speech_Recognition.
+                      [Accessed 15 July 2020]. </li>
+                    <li>[9] W. Lim, D. Jang and T. Lee, "Speech emotion recognition using convolutional and Recurrent
+                      Neural Networks", 2016 Asia-Pacific Signal and Information Processing Association Annual Summit
+                      and Conference (APSIPA), 2016. Available: https://ieeexplore.ieee.org/abstract/document/7820699.
+                      [Accessed 21 September 2020]. </li>
+                  </ul>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="content_footer"></div>
+          <div id="footer">
+            <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact
+                Us</a></p>
+            <p>
+              @ 2020 Sri Lanka Institute of Information Technology.All Rights Reserved.
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <h1 style="text-align: center;"><strong>Domain</strong></h1>
-      </div>
-      <div id="content">
-        <h2><b>Research Gap</b></h2>
-            <p>"DioNote"[1] is a mobile applications that can recognize handwritings.</p>
-            <ul>
-              <li>The application cannot recognize the handwritings which are on papers and can only recognize the handwritings which are write on screen.</li>
-              <li>The application is not suitable for Sri Lankan hospitals since each doctor cannot keep a tablet which has stylus to record examinations and prescriptions</li>
-            </ul>
+      </body>
 
-            <p>The Medicalchain[2]  is an application that is used to transfers clinical data through blockchain</p>
-            <ul>
-              <li>It uses permission based Hyperledger Fabric architecture which allows varying access levels. </li>
-              <li>But our system is built using a private Ethereum blockchain which is permissioned. So only the authorized parties can view data.</li>
-            </ul>
+      </html>
 
-          <h2><b>Research Problem</b></h2>
-            <ul>
-              <li>Patient clinical records are responsive data that are needed by hospitals and doctors when a patient is transferred.
-              </li>
-              <li>Currently there does not exist a secure means to transfer for this information.</li> 
-              <li>Patient clinical records are currently stored in paper format. </li>
-              <li>These paper documents contain doctors' handwriting which are known to be difficult to comprehend. </li>
-              <li>In turn this may lead to miss interpretation of the patient records, which can lead to harmful outcomes. </li>
-            </ul>
 
-            <h2><b>Research Objectives</b></h2>
-            <h3 style="padding-left: 20px">Main Objective</h3>
-            <p style="text-align: justify;text-justify: inter-word;">The project Digitized Clinical Data Transfer using Digital Ledger�s main objective is to provide features for digitizing handwritten paper document and transfer patient�s clinical data between two hospitals in a secure way.</p>
-
-            <h3 style="padding-left: 20px">Specific Objectives</h3>
-            <ul>
-                <li>Character recognition of different Doctors' handwritings</li>
-                <li>Recognize Doctors' handwritten text.</li>
-                <li>Converting Clinical Data  & Transfer Clinical Data</li>
-                <li>Authenticating Clinical Data</li>            
-            </ul>  
-        <h2><b>Literature Survey</b></h2>      
-        <p style="text-align: justify;text-justify: inter-word;">Convolutional neural network (CNN) is one of a major deep learning algorithm that is used for classifying images, cluster them by similarities and perform object recognition within scenes[4]. It performs Optical Character Recognition (OCR) to digitize and make natural language processing possible on the analog and handwritten document, where the images are symbols to be transcribed [4]. There are several architectures available for the
-        Convolutional neural network. Out of those "LeNet" was one of very first convolutional neural network which introduced in 1994 by Yaan LeCun[5],[6]. The LeNet is mainly used for character recognition. The LeNet5 architecture was fundamental, in particular, the insight that image feature is distributed across the entire image and convolutions with learnable parameters are an effective way to extract similar features at multiple locations with few parameters[5]. </p>
-
-        <img src="images/convo.png" width="580px" /><p style="text-align: center;">Figure 1: LeNet architecture</p>
-        <p style="text-align: justify;text-justify: inter-word;">Besides, CNN is comprised of one or more convolutional layers and then followed by one or more fully connected layers as in a standard multilayer neural network[7] and the input and an output layer. Each layer is made up of a set of neurons, where each neuron is fully connected to all neurons in the previous layer[8]. As well as that, CNN ingests and process images as tensors and tensors are matrices of number with additional dimension[4].</p>
-        <ul >
-          <li style="text-align: justify;text-justify: inter-word;">Convolution layer: This layer is mainly used to extract the features from the input image. It preserves the spatial relationship between pixels by learning image features using small squares of input data[6]. </li>
-          
-          <li style="text-align: justify;text-justify: inter-word;">Pooling layer: This layer is basically used to combine the outputs of neuron clusters at one layer into a single neuron in the next layer. As well as that it reduces the spatial size of the representation to reduce the number of parameters and computation in the network and hence also control overfitting[8]. There are several types of pooling layers such as Max, Average, and Sum. </li>
-          
-          <li style="text-align: justify;text-justify: inter-word;">Fully connected layer: This layer is used to connect every neuron in one layer to every neuron in another layer. Based on the high-level output features of the convolutional layer and pooling layer, and training dataset, classify the class of input image in this layer.</li>
-          </ul>
-          <p style="text-align: justify;text-justify: inter-word;">Similar to the LeNet architecture there are several architectures called The Gap, Dan Ciresan Net, AlexNet, VGG, Network-in-Network etc.   Handwritings are differing from person to person. Since try to recognize the characters of different doctor’s handwriting, the first step is to detect the characters by the system. Then it has to segment the detected character as an individual component. There are different segmentation types available such as boxed-discrete input segmentation; the writer once again aids the recognizer in segmenting the writing into individual character, pure cursive writing segmentation[9]. </p>
-          <span class="center"><img src="images/textrec.png" /></span>
-          <p style="text-align: center;">Figure 2: Boxed-discrete segmentation</p>
-          <p style="text-align: justify;text-justify: inter-word;">Text recognition involves several steps including preprocessing, segmentation, feature extraction, classification, post-processing. Preprocessing is used to remove noise, skew, and the slant of an image. When preprocessing is over, the noise-free image is passed to segmentation stage and segment individual character of the image. Before character segmentation, the text has to segment from the sentences by using white space. Then segmented text should segment into character using character size. After that feature extraction is done by using OCR. Finally, do the classification and postprocessing[10][11]. There are three steps available to detect characters in three font styles in a range of font size. The first step is detection. In the detection stage, it extracts the only the text area with noise free as a binary image from the original image. Then it passes to the recognition stage. In this step, the characters identified as letters and the images will be converted into text. It has several steps to identify the letters. Those are removing the borders, divide the text into rows, divide the rows into words and divide the words into letters. Then the final step is to print out the recognized letters[12]. Text and image region segmentation form a document image can do by using Differential-Processing text extraction concept. The text segmentation is a combination of RBSC and DPTE. It is capable of separating text from simple and overlapping welldefined document layout. RBSC subdivide the document image into a rectangular region of data are stored into blocks of information such as X and Y origin. DEPT is capable of analyzing complex document which includes irregular shapes of images or non-rectangular blocks[13]. The handwritten images input to the system for identifying the handwritten patterns. The image should clear to get actual information. Template correction method is used for identifying images. There are three parts to this technique, building the template, image match, and template correction and object recognition. These techniques apply to high-resolution images and objects and identify the objects in the images. The image can be consisting of degraded quality due to poor quality equipment, data transmission issues etc. There are several types of noises Impulse noise, Amplifier noise, Short noise which are the case for low-quality images. Those type of images can be recreated by removing noise or unnecessary data from the original image[14]. Template matching used to identify similarities between two objects. It can be categorized into area-based approaches and feature-based approaches. In the area-based approach, there are some cases which direct matching of the template and target image is not easy. Split the template image into sub-images and perform matching can be used as a solution. In native template matching usually without scaling the target image scan[15]. </p>
-            <!--        <h2>Headings</h2>
-                    <p>These are the different heading formats:</p>-->
-            <span class="center"><img src="images/template.png"/></span>
-            <p style="text-align: center;">Figure 3: Template matching[7]</p>
-            <p style="text-align: justify;text-justify: inter-word;">Template matching technique for searching words in document images used to search and find the location of a small part of the image in the large image and used in Optical Character Recognition and search and convert scanned image to text. This technique can be used to compare single characters and multiple characters from a word document. Input image capture and store an image file format JPG/JPEG, PNG, TIFF etc. Characters detect using a template string. Converted color image converts into a black and white image which is called binary image. Normalized cross correlation, correlation methods, and performance index method used for the analyzing process.  [16]Furthermore text detection used in the selection of text-based Traffic Signs, First System detects the text-based traffic signs then convert those images to 2-D frame. The dimensions and heights of road signs are fixed. To detect symbol-based traffic signs this system uses MSER (Maximally Stable Extremal Region) and HSV (Hue Saturation and Value)color thresholding. MSER maintain the shape of the image and HSV detect additional text signs. Before reading the text perspective transformation apply vertically align text to improve the detection[17] OCR (Optical Character Recognition) belongs to machine recognition technique performing the automatic identification. It identifies objects automatically from the data[11] entered into the system.[18] OCR is a technique which is used to convert the scanned image into editable text format. The results depend on text pre-processing and segmentation algorithms. The performance can be measured using the accuracy and error rate. Images from different formats process and remove noises to enhance the quality. Segmentation algorithm uses to extract words from the image. Then OCR used to classify characters and patterns. The handwritten and printed characters can be recognized using OCR but performance depends on the quality of the input document. [19]The Text to Speech (TTS) conversion technology used to converts scanned or printed text image, handwritten text into editable text. It gets the image and converts color image to grayscale image by threshold operation and Character extracted and resized according to the template size.[20]Character recognition is somewhat challenging due to the persistence of large shapes, scale and format of handwritten papers. Discrete Cosine Transform(DCT) and Binarization use for Character Recognition. Using back propagation neural Network categorize the handwritten numerals.[21]Captcha is a security technique for internet security. The Reading Oriented Overlapping Text(ROOT) based captcha can read both handwritten, and machine-generated patterns which are based on CAPTCHA generation algorithm.[22]Accuracy of handwritten characters can improve using segmentation and zoning and applying pattern recognition using a neural network.[23] </p>
-            <span class="center"><img src="images/quality.png"/></span>
-            <p style="text-align: center;">Figure 4: Image Improve Quality [10]</p>
-            <h3>Medrec</h3>
-            <p style="text-align: justify;text-justify: inter-word;">MedRec is another decentralized record management system which is helpful for handling EMRs (Electronic Medical Records). MedRec is based on blockchain technology and manages authentication, confidentiality, accountability and data sharing. Many different medical stakeholders like researchers, public health authorities are allowed to participate in the network as blockchain “miners”. Patients can easily access their own medical records across providers and treatment sites through MedRec. Also, it keeps track of the logs. MedRec has applied blockchain structure to EMRs. The blockchain uses a public key cryptography technique to create an immutable chain of content. In each participating “node” in the network, there are copies of the blockchain distributed. For the security purposes, blockchain uses “Proof of Work algorithm”. The blockchain is used as a solution for many issues such as fragmented, slow access to medical data, system interoperability, and patient agency.The system is implemented based on four major components; Backend Library, Ethereum Client, Database Gatekeeper and EMR Manager. Miners participation and contribution of their computational resources in the network is needed. So, one of the disadvantages of MedRec is that gas cost has to be paid for the miners. [2]
-            </p>
-            <h3>Blockchain Technology</h3>
-            <p style="text-align: justify;text-justify: inter-word;">The blockchain is a peer-to-peer (P2P) distributed ledger technology with of three main components: a distributed network, a shared ledger, and digital transactions. The blockchain is currently mainly used for Bitcoin.All members of the distributed network keep records digital transactions into a shared ledger. To add transactions, members of the network, run algorithms to verify the relevant transaction. If many numbers of members in the network agree that the transaction is valid, the new transaction is added to the shared ledger.[24]
-            </p>
-            <h3>Ethereum</h3>
-            <p style="text-align: justify;text-justify: inter-word;">Ethereum is a public blockchain based distributed computing platform. It can work as a computer, but the performance will be slower than most of the current computers since it has a transaction time of around 12 seconds.[25]</p>
-            <span class="center"><img src="images/quality.png"/></span> 
-            <p style="text-align: center;">Figure 5: System Implementation Diagram - MedRec</p>
-            <h3>Security</h3>
-            <ul>
-              <li>Blockchain Encryption - In the blockchain, nothing should be stored in plain text. All the information intended for all nodes in the network must be encrypted by a network-shared key. And the responsive information should be encrypted by the originating node.[26]</li>
-              <li>Smart Contracts - Directly controls the transactions under certain conditions on the blockchain. These contracts are stored on the blockchain. This system has basically two implementations of the smart contracts; to send data and files to the blockchain.</li>
-            </ul>
-
-            <h2><b>Technologies Used</b></h2>
-            <ul>
-                <li>Python</li>
-                <li>Open CV</li>
-                <li>Convolutional Neural Networks</li>
-                <li>K Nearest Neighbor</li>
-                <li>HL7</li>
-                <li>Ethereum</li>
-                <li>Blockchain</li>
-
-            </ul>
-            <h2><b>References</b></h2>
-            <ul>
-                <li>[1] "New App | read doctor’s orders | bad writing | technology | electronics | MTspace." .</li>
-                <li>   [2]  "3 Free Android Apps with Handwriting Recognition Capability – supportz." .</li>
-                <li>    [3] "Blockchain Technology for Secure Storage and Transfer of Electronic Health Records."</li>
-                <li>    [4] "Convolutional Neural Network (CNN)." .</li>
-                <li>    [5] "The History of Neural Networks - Dataconomy." .</li>
-                <li>    [6] "USE OF CONVOLUTIONAL NEURAL NETWORK FOR IMAGE CLASSIFICATION."" .</li>
-                <li>    [7] "Unsupervised Feature Learning and Deep Learning Tutorial." .</li>
-                <li>    [8] "CS231n Convolutional Neural Networks for Visual Recognition." .</li>
-                <li>    [9] H. S. M. Beigi, "An Overview of Handwriting Recognition," Proc. 1 st Annu. Conf. Technol. Adv. Dev. Ctries., no. June, pp. 30–46, 1993.</li>
-                <li>    [10]  M. R. Patil MrAudumbar R Misal MrKetan R Nalawade, "Survey paper on Text Recognition Using Image Processing," Int. J. Adv. Res. Electron. Commun. Eng., vol. 4, no. 3, 2015.</li>
-                <li>    [11]  M. June, C. Mizan, T. Chakraborty, and S. Karmakar, "Available Online at www.ijarcs.info Text Recognition using Image Processing," vol. 8, no. 5, pp. 765–768, 2017.</li>
-                <li>    [12]  M. Al-Shabi, "Text detection and character recognition using fuzzy image processing," J. Electr. Eng., vol. 57, no. 5, pp. 258–267, 2006.</li>
-                <li>    [13]  N. Avenue, "TEXT SEGMENTATION FOR AUTOMATIC DOCUMENT PROCESSING," pp. 642–648, 1996.</li>
-                <li>    [14]  D. Gupta and S. Goswami, "Object Recognition based on Template Matching and Correlation Method in Hyperspectral Images Divya Gupta," Int. J. Comput. Appl., vol. 166, no. 11, pp. 38–43, 2017.</li>
-                <li>    [15]  N. S. Hashemi, R. B. Aghdam, A. S. B. Ghiasi, and P. Fatemi, "Template Matching Advances and Applications in Image Analysis," Am. Sci. Res. J. Eng. Technol. Sci., pp. 91–96, 2016.</li>
-                <li>    [16]  V. S and S. A, "Template Matching Technique for Searching Words in Document Images," Int. J. Cybern. Informatics, vol. 4, no. 6, pp. 25–35, 2015.</li>
-                <li>   [17] J. Greenhalgh and M. Mirmehdi, "Recognizing text-based traffic signs," IEEE Trans. Intell. Transp. Syst., vol. 16, no. 3, pp. 1360–1369, 2015.</li>
-                <li>   [18] A. Chaudhuri, K. Mandaviya, P. Badelia, and S. K Ghosh, Optical Character Recognition Systems for Different Languages with Soft Computing, vol. 352. 2017.</li>
-                <li>   [19] V. S and S. A, "Performance Comparison of OCR Tools," Int. J. UbiComp, vol. 6, no. 3, pp. 19–30, 2015.</li>
-                <li>   [20] G. K. Sagar, "Real Time Implementation of Optical Character Recognition Based TTS System using Raspberry pi," no. 7, pp. 149–156, 2017.</li>
-                <li>   [21] A. Sethy and P. K. Patra, "Off-line Odia handwritten numeral recognition using neural network: A comparative analysis," Proceeding - IEEE Int. Conf. Comput. Commun. Autom. ICCCA 2016, pp. 1099–1103, 2017.</li>
-                <li>   [22] A. Thakur, R. Chaware, S. Nikhil, and S. K. Hafizul Islam, "A Reading Oriented Overlapping Text based CAPTCHA," Int. Conf. Trends Autom. Commun. Comput. Technol. I-TACT 2015, pp. 1–6, 2016.</li>
-                <li>   [23] S. E. Benita Galaxy and S. S. Ebenezer, "Enhancement of segmentation and zoning to improve the accuracy of handwritten character recognition," Int. Conf. Electr. Electron. Optim. Tech. ICEEOT 2016, pp. 4732–4735, 2016.</li>
-                <li>   [24] L. A. Linn and M. B. Koo, "Blockchain For Health Data and Its Potential Use in Health IT and Health Care Related Research," U.S. Dep. Heal. Hum. Serv., pp. 1–10, 2016.</li>
-                <li>   [25] S. Huh, S. Cho, and S. Kim, "Managing IoT devices using blockchain platform," Int. Conf. Adv. Commun. Technol. ICACT, pp. 464–467, 2017.</li>
-                <li>   [26] K. Peterson, R. Deeduvanu, P. Kanjamala, and K. Boles, "A Blockchain-Based Approach to Health Information Exchange Networks," Mayo Clin., no. 1, p. 10, 2016.</li>
-                <li>   [27] "REF I12 - Patient referral (HL7 v2.7)." .</li>
-            </ul>
-            
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
-       <p>
-          @ 2018 Sri Lanka Institute of Information Technology.All Rights Reserved.
-       </p>    
-    </div>
-  </div>
-</body>
 </html>
