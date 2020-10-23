@@ -344,7 +344,8 @@ ul#menu li a:hover
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer; 
-  background: #3B3B3B; 
+  background: #008CBA;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   color: #FFF;}
 
 .form_settings textarea, .form_settings select
