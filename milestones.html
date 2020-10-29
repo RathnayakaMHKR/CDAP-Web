@@ -20,23 +20,23 @@
     var para9 = "";
     $(document).ready(function()
     {
-       para1 = $('#para1').html();
-       para2 = $('#para2').html();
-       para3 = $('#para3').html();
-       para4 = $('#para4').html();
-       para5 = $('#para5').html();
-       para6 = $('#para6').html();
-       para7 = $('#para7').html();
-       para8 = $('#para8').html();
-       para9 = $('#para9').html();
-            
+      para1 = $('#para1').html();
+      para2 = $('#para2').html();
+      para3 = $('#para3').html();
+      para4 = $('#para4').html();
+      para5 = $('#para5').html();
+      para6 = $('#para6').html();
+      para7 = $('#para7').html();
+      para8 = $('#para8').html();
+      para9 = $('#para9').html();
+
     });
-    
+
     function searchData(){
-     
+
       var text=document.getElementById("search_field").value;
-       if(text)
-       {        
+      if(text)
+      {
         var pattern=new RegExp("("+text+")", "gi");
 
         var new_text=para1.replace(pattern, "<span class='highlight'>"+text+"</span>");
@@ -63,133 +63,142 @@
         var new_text=para8.replace(pattern, "<span class='highlight'>"+text+"</span>");
         document.getElementById("para8").innerHTML=new_text;
 
-         var new_text=para8.replace(pattern, "<span class='highlight'>"+text+"</span>");
-         document.getElementById("para9").innerHTML=new_text;
+        var new_text=para8.replace(pattern, "<span class='highlight'>"+text+"</span>");
+        document.getElementById("para9").innerHTML=new_text;
 
-       }
-      
+      }
+
     }
 
   </script>
 </head>
 
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">PERSONALIZED SOLUTION FOR
+<div id="main">
+  <div id="header">
+    <div id="logo">
+      <div id="logo_text">
+        <!-- class="logo_colour", allows you to change the colour of the text -->
+        <h1 style="text-align: center;"><a href="index.html"><span class="logo_colour">PERSONALIZED SOLUTION FOR
                 DEMENTIA PATIENTS USING REINFORCEMENT LEARNING</span></a></h1>
 
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="content.html">Scope</a></li>
-          <li class="selected"><a href="milestones.html">Milestones</a></li>
-          <li><a href="document.html">Documents</a></li>
-          <li><a href="document.html">Presentations</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
       </div>
     </div>
-    <div id="content_header"></div>
-    <div id="site_content">
-      <div>
-        <h1 style="text-align: center;"><strong>Milestones</strong></h1>
-      </div>
-      <div id="banner2"></div>
-      <div id="sidebar_container">
-       
-        <div class="sidebar">
-          <div class="sidebar_top"></div>
-          <div class="sidebar_item">
-            <br>
-            <div>
-              <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....."
-                     onkeyup="searchData()" onkeydown="searchData()" />
-              <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="testimages/Searcicon.png"
-                     alt="Search" title="Search" height="30" width="20"/>
-            </div>
-            <br>
-          </div>
-          <div class="sidebar_base"></div>
-        </div>
-      </div>
-      <!--Remove "Milestones" header from here and added it from the begin-->
-      <div id="content">
-        <p name="para1" id="para1" style="text-align: justify;text-justify: inter-word;">In the project management framework, a milestone is a marker to mark specific points which signifies the changes or stages in development process within the project timeline. Start date, end date, inputs, budget are the some of specific points of it. In many instances, milestones do not impact with the project time duration. The main goal is to achieve the success on major progress points.</p>
-
-        <div>
-          <h2><u><img src="testimages/january28.jpg" height="120px" width="120px"> Project Proposal Presentation</u></h2>
-          <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;">The initial step to represent the main idea of our research project to the research panel. This is a some kind of an overview about the problem, methodology with the solution going to be implemented, objectives and the expected final outcome.</p>
-          <p>Date submitted: 28th January 2020</p>
-          <p>Marks allocated: 5%</p>
-        </div>  
-
-        <div>
-          <h2><u><img src="testimages/february25.jpg" height="120px" width="120px"> Project Proposal Documentation</u></h2>
-          <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;">The documentation which containing the explanation of requirements, implementation of the proposed system. And through this document, it is explaining about the scope and the benefits for the Dementia patients.</p>
-          <p>Date submitted: 25th February 2020</p>
-          <p>Marks allocated: 5%</p>
-        </div>  
-
-        <div>
-          <h2><u><img src="testimages/july13.jpg" height="120px" width="120px"> Project Progress Presentation (I)</u></h2>
-          <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;">The demonstration on working components which were almost done the implementation of functionalities with the explanation of their inner working of it.</p>
-          <p>Date submitted: 13th July 2020</p>
-          <p>Marks allocated: 15%</p>
-        </div>  
-
-        <div>
-          <h2><u><img src="testimages/july17.jpg" height="120px" width="120px"> Research Paper Submission </u></h2>
-          <p name="para5" id="para5" style="text-align: justify;text-justify: inter-word;">The research paper is the academic document of this "Personalized Solution for Dementia Patients using Reinforcement Learning" research project containing the results of the newly invented product for an existing Dementia care problem. </p>
-          <p>Date submitted: 17th July 2020</p>
-          <p>Marks allocated: 10%</p>
-          
-        </div> 
-
-        <div>
-          <h2><u><img src="testimages/september24.jpg" height="120px" width="120px"> Project Progress Presentation (II) </u></h2>
-          <p name="para6" id="para6" style="text-align: justify;text-justify: inter-word;">The demonstration of 90% implementation with explanation of research output of each component and the poster exhibition.</p>
-          <p>Date submitted: 24th September 2020</p>
-          <p>Marks allocated: 18%</p>
-        </div>
-
-        <div>
-          <h2><u><img src="testimages/september25.jpg" height="120px" width="120px"> Final Report Submission </u></h2>
-          <p name="para6" id="para7" style="text-align: justify;text-justify: inter-word;">The final report also known as "dissertation" of a research project straightening the introduction, methodology, test results and final outcome of the project.</p>
-          <p>Date submitted: 25th September 2020</p>
-          <p>Marks allocated: 19%</p>
-        </div>
-
-        <div>
-          <h2><u><img src="testimages/november25.jpg" height="120px" width="120px"> Project Final Presentation </u></h2>
-          <p name="para7" id="para8" style="text-align: justify;text-justify: inter-word;">This is the final demonstration of the explaining the product and its results which were built and generated throughout the research journey.</p>
-          <p>Date submitted: 25th November 2020</p>
-          <p>Marks allocated: 10%</p>
-        </div> 
-
-        <div>
-          <h2><u><img src="testimages/november25.jpg" height="120px" width="120px"> Final Viva Session </u></h2>
-          <p name="para8" id="para9" style="text-align: justify;text-justify: inter-word;">Final viva session will be conducted to evaluate the individual performance and contribution of every students participated for the research project.</p>
-          <p>Date submitted: 25th November 2020</p>
-          <p>Marks allocated: 10%</p>
-        </div>  
-
-      </div>
-    </div>
-    <div id="content_footer"></div>
-    <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>     
-       <p>
-          @ 2020 Sri Lanka Institute of Information Technology.All Rights Reserved.
-       </p>    
+    <div id="menubar">
+      <ul id="menu">
+        <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="content.html">Scope</a></li>
+        <li class="selected"><a href="milestones.html">Milestones</a></li>
+        <li><a href="document.html">Documents</a></li>
+        <li><a href="document.html">Presentations</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
   </div>
+  <div id="content_header"></div>
+  <div id="site_content">
+
+    <div id="sidebar_container">
+
+      <div class="sidebar">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+          <br>
+          <div>
+            <input class="search" type="text" name="search_field" id="search_field" placeholder="Enter keywords....."
+                   onkeyup="searchData()" onkeydown="searchData()" />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="testimages/Searcicon.png"
+                   alt="Search" title="Search" height="30" width="20"/>
+          </div>
+          <br>
+        </div>
+        <div class="sidebar_base"></div>
+      </div>
+    </div>
+    <div>
+      <h1 style="text-align: center;"><strong>Milestones</strong></h1>
+    </div></br></br>
+    <div id="banner2"></div>
+
+    <div id="content">
+      <p name="para1" id="para1" style="text-align: justify;text-justify: inter-word;">In the project management framework, a milestone is a marker to mark specific points which signifies the changes or stages in development process within the project timeline. Start date, end date, inputs, budget are the some of specific points of it. In many instances, milestones do not impact with the project time duration. The main goal is to achieve the success on major progress points.</p>
+
+      <div>
+        <h2>Project Proposal Presentation</h2>
+        <p name="para2" id="para2" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px"> The initial step to represent the main idea of our research project to the research panel. This is a some kind of an overview about the problem, methodology with the solution going to be implemented, objectives and the expected final outcome.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 28th January 2020</p>
+        <img src="testimages/january28.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 5%</p>
+      </div>
+
+      <div>
+        <h2>Project Proposal Documentation</h2>
+        <p name="para3" id="para3" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">The documentation which containing the explanation of requirements, implementation of the proposed system. And through this document, it is explaining about the scope and the benefits for the Dementia patients.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 25th February 2020</p>
+        <img src="testimages/february25.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 5%</p>
+      </div>
+
+      <div>
+        <h2>Project Progress Presentation (I)</h2>
+        <p name="para4" id="para4" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">The demonstration on working components which were almost done the implementation of functionalities with the explanation of their inner working of it.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 13th July 2020</p>
+        <img src="testimages/july13.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 15%</p>
+      </div>
+
+      <div>
+        <h2>Research Paper Submission</h2>
+        <p name="para5" id="para5" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">The research paper is the academic document of this "Personalized Solution for Dementia Patients using Reinforcement Learning" research project containing the results of the newly invented product for an existing Dementia care problem. </p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 17th July 2020</p>
+        <img src="testimages/july17.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 10%</p>
+
+      </div>
+
+      <div>
+        <h2>Project Progress Presentation (II)</h2>
+        <p name="para6" id="para6" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">The demonstration of 90% implementation with explanation of research output of each component and the poster exhibition.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 24th September 2020</p>
+        <img src="testimages/september24.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 18%</p>
+      </div>
+
+      <div>
+        <h2>Final Report Draft Submission</h2>
+        <p name="para6" id="para7" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">The final report also known as "dissertation" of a research project straightening the introduction, methodology, test results and final outcome of the project.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 25th September 2020</p>
+        <img src="testimages/september25.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 19%</p>
+      </div>
+
+      <div>
+        <h2>Project Final Presentation </h2>
+        <p name="para7" id="para8" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">This is the final demonstration of the explaining the product and its results which were built and generated throughout the research journey.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 25th November 2020</p>
+        <img src="testimages/november25.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 10%</p>
+      </div>
+
+      <div>
+        <h2>Final Viva Session</h2>
+        <p name="para8" id="para9" style="text-align: justify;text-justify: inter-word;"><img src="Style/Bullet.png" height="17px" width="17px">Final viva session will be conducted to evaluate the individual performance and contribution of every students participated for the research project.</p>
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Date submitted: 25th November 2020</p>
+        <img src="testimages/november25.jpg" height="120px" width="120px">
+        <p><img src="Style/Bullet.png" height="17px" width="17px">Marks allocated: 10%</p>
+      </div>
+
+    </div>
+  </div>
+  <div id="content_footer"></div>
+  <div id="footer">
+    <p><a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="contact.html">Contact Us</a></p>
+    <p>
+      @ 2020 Sri Lanka Institute of Information Technology.All Rights Reserved.
+    </p>
+  </div>
+</div>
 </body>
 </html>
