@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3341b51-c9e9-40ce-8842-d9134a733458" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/aboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/aboutUs.html" afterDir="false" />
-    </list>
+    <list default="true" id="d3341b51-c9e9-40ce-8842-d9134a733458" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
@@ -124,12 +122,12 @@
       <workItem from="1603434508680" duration="12555000" />
       <workItem from="1603456948601" duration="1263000" />
       <workItem from="1603458246390" duration="843000" />
-      <workItem from="1603968600674" duration="5447000" />
+      <workItem from="1603968600674" duration="5741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40501000" />
+    <option name="totallyTimeSpent" value="40795000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
